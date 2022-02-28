@@ -16,7 +16,7 @@ while (true)
     int l = output.Length;
     int i = 0;
     Console.Clear();
-    while (i <= output.Length - 1)
+    while (i <= l - 1)
     {
         Console.Write("{0}", output[i]);
         i++;
