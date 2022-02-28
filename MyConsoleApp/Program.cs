@@ -10,9 +10,7 @@ string getFormattedTimeDate()
     return formattedTimeDate;
 }
 
-var periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(1));
-
-while (await periodicTimer.WaitForNextTickAsync())
+while (true)
 {
     string output = getFormattedTimeDate();
     int l = output.Length;
