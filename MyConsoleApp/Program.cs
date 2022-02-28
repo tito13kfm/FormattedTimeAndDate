@@ -22,4 +22,5 @@ while (true)
         i++;
         System.Threading.Thread.Sleep(50);
     }
+    System.Threading.Thread.Sleep(2000);
 }
