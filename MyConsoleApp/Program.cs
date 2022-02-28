@@ -5,8 +5,8 @@ string getFormattedTimeDate()
     string time = System.DateTime.Now.ToLongTimeString();
     string date = System.DateTime.Now.ToLongDateString();
     string dateTime = date + " " + time;
-    string border = new('*', dateTime.Length + 4);
-    string formattedTimeDate = border + "\n| " + dateTime + " | \n" + border;
+    string border = new('═', dateTime.Length + 2);
+    string formattedTimeDate = "╔" + border + "╗\n║ " + dateTime + " ║ \n╚" + border + "╝";
     return formattedTimeDate;
 }
 
