@@ -11,8 +11,17 @@ string getFormattedTimeDate()
 }
 
 var periodicTimer = new PeriodicTimer(TimeSpan.FromSeconds(1));
+
 while (await periodicTimer.WaitForNextTickAsync())
 {
+    string output = getFormattedTimeDate();
+    int l = output.Length;
+    int i = 0;
     Console.Clear();
-    Console.WriteLine(getFormattedTimeDate());
+    while (i <= output.Length - 1)
+    {
+        Console.Write("{0}", output[i]);
+        i++;
+        System.Threading.Thread.Sleep(50);
+    }
 }
